@@ -62,13 +62,18 @@
 	</nav>
 	<main>
 		<section>
+			<img src="./assets/images/imh.jpg" class="img-slider">
+		</section>
+		<section>
 			<div class="dashboard-wrapper flex flex-wrap">
 				<aside class="aside-fillter flex jc-between">
 					<div class="fillter-title title c-white">Filter</div>
-                    <button class="fillter-btn cursor-p no-syl-btn c-white"><i class="fa-solid fa-bars"></i></button>
+                    <button type="button" class="fillter-btn cursor-p no-syl-btn c-white" onclick="openHeaderMenu()">
+                    	<i class="fa-solid fa-bars"></i>
+                    </button>
 					<ul id="fillter-nav" class="g-5 flex flex-col">
 						<li class="x-btn">
-							<button><i class="fa-solid fa-circle-xmark"></i></button>
+							<button class="no-syl-btn" onclick="closeHeaderMenu()"><i class="fa-solid fa-circle-xmark"></i></button>
 						</li>
 						<li>
 							<div class="fillter-dropdown g-50 flex items-center jc-between">
@@ -203,5 +208,15 @@
 			</div>
 		</section>
 	</main>
+
+	<script>
+		 function openHeaderMenu() {
+            document.getElementById('fillter-nav').style.left = '0';
+        }
+
+        function closeHeaderMenu() {
+            document.getElementById('fillter-nav').style.left = '-110%';
+        }
+	</script>
 </body>
 </html>

@@ -1,15 +1,27 @@
 .coup-cont{
-	border: 5px solid #ccc;
-	padding: 15px;
-	width: 19%;
+	border: 2px solid #ccc;
+	padding:20px;
+	width: 24%;
 	gap: 10px;
 }
 
-.cup-amount{
-	font-size: 32px;
+#coup-amount{
+	font-size: 24px;
+	padding: 12px 20px;
+	border: 2px dashed #aaa;
+	background-color: #eee;
+	text-transform: uppercase;
 }
 
 .coup-code{
 	background-color: #eee;
 	padding: 8px 12px;
+}
+
+#coup-copy{
+	padding:12px 30px;
+}
+
+#coup-copy i{
+	color: #bbb;
 }

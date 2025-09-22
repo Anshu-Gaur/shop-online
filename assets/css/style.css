@@ -1,15 +1,22 @@
 @import url("./templates/header.css");
 @import url("./templates/categories.css");
+@import url("./templates/slider.css");
 @import url("./templates/aside.css");
 @import url("./templates/cards.css");
 @import url("./templates/cart.css");
 @import url("./templates/price.css");
 @import url("./templates/reviews.css");
 @import url("./templates/coupons.css");
+@import url("./templates/profile.css");
 
 :root {
 	--primary-accent-clr: #c17a5f;
 	--Persian-Orange: var(--primary-accent-clr);
+}
+
+@font-face {
+	font-family:Poppins-Regular;
+	src: url('../font/Poppins-Regular.ttf');
 }
 
 * {
@@ -18,6 +25,7 @@
 	list-style:none;
 	box-sizing:border-box;
 	text-decoration:none;
+	font-family:Poppins-Regular;
 }
 
 /* Width & Images */

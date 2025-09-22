@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<div class="header flex items-center jc-between">
+			<a href="" class="logo">
+				<img src="./assets/images/Qlcia.png" alt="Website Logo" class="logo-img">
+			</a>
+			<form class="search-bar p-relative">
+				<div class="search-box flex items-center jc-between b-solid r-50 b-persian">
+					<input type="search" name="query" id="search-input" placeholder="Search products...">
+					<label for="search-input" class="search-icon bg-persian cursor-p"><i class="fa-solid fa-magnifying-glass"></i></label>
+				</div>
+				<ul class="search-suggestions" style="display: none;">
+					<li>mens <i class="fa-solid fa-arrow-up"></i></li>
+				</ul>
+			</form>
+			<div class="user-cart g-50 flex items-center jc-center">
+				<a href="" class="flex" title="My Account">
+					<abbr class="user-account flex items-center jc-center b-solid r-50 b-persian c-persian" title="User">
+						<i class="fa-solid fa-user"></i>
+					</abbr>
+				</a>
+				<a href="" class="flex" title="Shopping Cart">
+					<abbr class="cart-link p-relative flex items-center jc-center b-solid r-50 b-persian c-persian" title="Cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+						<div class="cart-count flex items-center jc-center r-50">10</div>
+					</abbr>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section>
+			<div class="dashboard-wrapper flex">
+				<aside class="aside-fillter">
+					<div class="fillter-title">Filter</div>
+                    <button class="fillter-btn"><i class="fa-solid fa-bars"></i></button>
+					<ul id="aside-nav" class="g-5 flex flex-col">
+						<li class="x-btn">
+							<button><i class="fa-solid fa-circle-xmark"></i></button>
+						</li>
+						<li><a href=""><i class="fas fa-user"></i>Profile</a></li>
+						<li><a href=""><i class="fas fa-box"></i>Orders</a></li>
+						<li><a href=""><i class="fas fa-heart"></i>Wishlist</a></li>
+						<li><a href=""><i class="fas fa-star"></i>Reviews</a></li>
+						<li><a href=""><i class="fa-solid fa-tag"></i> coupons</a></li>
+					</ul>
+				</aside>
+				<div class="main-container">
+					<form>
+						<div class="g-20 flex items-start jc-start flex-col">
+							<img src="" id="prfl-img">
+
+							<div class="w-100 g-50 flex">
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>First Name</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>Last Name</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+							</div>
+							<div class="w-100 g-50 flex">
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>Phone Number</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>Email Address</label>
+									<input type="email" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>Gender</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+							</div>
+							<div class="w-100 g-50 flex">
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>Address</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+							</div>
+
+							<div class="w-100 g-50 flex">
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>State</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>City</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>Country</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+								<div class="form-g w-100 g-5 flex flex-col">
+									<label>Personal Identification Number</label>
+									<input type="text" name="" placeholder="" class="inp w-100 b-solid b-persian r-20" readonly>
+								</div>
+							</div>
+
+							<div class="w-100 g-20 flex">
+								<button type="button" id="profile-edit" class="btn r-50 bg-persian c-white">
+									edit
+								</button>
+								<button type="submit" id="profile-save" class="btn r-50 bg-persian c-white" style="display:none;">
+									save
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="crop-sect g-20 items-center jc-center flex-col">
+				<button type="button" id="close-crop" class="btn r-50 c-white" style="background-color:red;">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<label for="crop-upload">
+					<div id="crop-cont" class=" flex items-center jc-center cursor-p">
+						<input type="file" name="" accept="image/*" id="crop-upload" style="display:none;">
+						<i class="fa-solid fa-file-arrow-up"></i>
+						<img src="">
+					</div>
+				</label>
+				<button type="button" id="crop-btn" class="btn r-50 c-white" style="background-color:green;">crop</button>
+			</div>
+		</section>
+	</main>
+	<script>
+		const editBtn = document.getElementById('profile-edit');
+		const saveBtn = document.getElementById('profile-save');
+		const inputs = document.querySelectorAll('input.inp');
+		const prflImg = document.getElementById('prfl-img');
+		const cropSect = document.querySelector('.crop-sect');
+		const closeCrop = document.getElementById('close-crop');
+
+		let editMode = false;
+
+		// profile-edit button click
+		editBtn.addEventListener('click', () => {
+			editMode = true;
+			inputs.forEach(input => input.removeAttribute('readonly'));
+			saveBtn.style.display = 'inline-block';
+			editBtn.style.display = 'none';
+		});
+
+		// profile image click
+		prflImg.addEventListener('click', () => {
+			if(editMode) {
+				cropSect.style.display = 'flex';
+			}
+		});
+
+		// close crop section
+		closeCrop.addEventListener('click', () => {
+			cropSect.style.display = 'none';
+		});
+
+		// crop upload logic
+		const cropUpload = document.getElementById('crop-upload');
+		const cropCont = document.getElementById('crop-cont');
+		const cropImg = cropCont.querySelector('img');
+
+		cropUpload.addEventListener('change', function() {
+		    const file = this.files[0];
+		    if (file) {
+		        const reader = new FileReader();
+		        reader.onload = function(e) {
+		            cropImg.src = e.target.result;
+		            cropImg.style.display = 'block';
+		            cropCont.querySelector('i').style.display = 'none';
+		        }
+		        reader.readAsDataURL(file);
+		    }
+		});
+	</script>
+</body>
+</html>
