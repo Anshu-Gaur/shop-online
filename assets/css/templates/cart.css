@@ -1,0 +1,51 @@
+.crt-cont{
+	padding-top:30px;
+}
+.pdt-crt{
+	width:500px;
+	padding: 10px 20px;
+}
+
+.crt-img{
+	width: 100px;
+	height: 100px;
+}
+
+.crt-itm{
+	gap: 10px;
+}
+
+.crt-btn{
+	background-color: transparent;
+	border: none;
+}
+
+.crt-rs{
+	padding: 0 20px 20px 20px;
+}
+
+.crt-edit-cont{
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 333;
+	top: 0;
+	right:0;
+	transition: right 0.3s ease-in-out;
+}
+.crt-edit-p{
+	background-color: whitesmoke;
+	position:absolute;
+	right: 0;
+	top: 0;
+	width: 400px;
+	height: 100vh;
+	padding: 20px;
+	overflow-y: auto;
+}
+
+#crt-edit-img{
+	width: 200px;
+	height: 200px;
+}

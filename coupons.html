@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<div class="header flex items-center jc-between">
+			<a href="" class="logo">
+				<img src="./assets/images/Qlcia.png" alt="Website Logo" class="logo-img">
+			</a>
+			<form class="search-bar p-relative">
+				<div class="search-box flex items-center jc-between b-solid r-50 b-persian">
+					<input type="search" name="query" id="search-input" placeholder="Search products...">
+					<label for="search-input" class="search-icon bg-persian cursor-p"><i class="fa-solid fa-magnifying-glass"></i></label>
+				</div>
+				<ul class="search-suggestions" style="display: none;">
+					<li>mens <i class="fa-solid fa-arrow-up"></i></li>
+				</ul>
+			</form>
+			<div class="user-cart g-50 flex items-center jc-center">
+				<a href="" class="flex" title="My Account">
+					<abbr class="user-account flex items-center jc-center b-solid r-50 b-persian c-persian" title="User">
+						<i class="fa-solid fa-user"></i>
+					</abbr>
+				</a>
+				<a href="" class="flex" title="Shopping Cart">
+					<abbr class="cart-link p-relative flex items-center jc-center b-solid r-50 b-persian c-persian" title="Cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+						<div class="cart-count flex items-center jc-center r-50">10</div>
+					</abbr>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section>
+			<div class="dashboard-wrapper flex">
+				<aside class="aside-fillter">
+					<div class="fillter-title">Filter</div>
+                    <button class="fillter-btn"><i class="fa-solid fa-bars"></i></button>
+					<ul id="aside-nav" class="g-5 flex flex-col">
+						<li class="x-btn">
+							<button><i class="fa-solid fa-circle-xmark"></i></button>
+						</li>
+						<li><a href=""><i class="fas fa-user"></i>Profile</a></li>
+						<li><a href=""><i class="fas fa-box"></i>Orders</a></li>
+						<li><a href=""><i class="fas fa-heart"></i>Wishlist</a></li>
+						<li><a href=""><i class="fas fa-star"></i>Reviews</a></li>
+						<li><a href=""><i class="fa-solid fa-tag"></i> coupons</a></li>
+					</ul>
+				</aside>
+				<div class="main-container">
+					<form>
+						<div>
+							<div class="coup-cont flex flex-col r-20">
+								<div class="g-20 flex items-center jc-between">
+									<div class="cds-Coupon tt-cap">save</div>
+									<div class="cup-amount">Rs 100</div>
+								</div>
+								<div>this is coupons</div>
+								<div>
+									<div>Expiry :</div>
+									<div></div>
+								</div>
+
+								<div class="coup-code g-20 flex items-center jc-between cursor-p">
+									<div>
+										A1B2C3
+									</div>
+									<button type="button" class="no-syl-btn"><i class="fa-solid fa-copy"></i></button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

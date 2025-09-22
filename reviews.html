@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<div class="header flex items-center jc-between">
+			<a href="" class="logo">
+				<img src="./assets/images/Qlcia.png" alt="Website Logo" class="logo-img">
+			</a>
+			<form class="search-bar p-relative">
+				<div class="search-box flex items-center jc-between b-solid r-50 b-persian">
+					<input type="search" name="query" id="search-input" placeholder="Search products...">
+					<label for="search-input" class="search-icon bg-persian cursor-p"><i class="fa-solid fa-magnifying-glass"></i></label>
+				</div>
+				<ul class="search-suggestions" style="display: none;">
+					<li>mens <i class="fa-solid fa-arrow-up"></i></li>
+				</ul>
+			</form>
+			<div class="user-cart g-50 flex items-center jc-center">
+				<a href="" class="flex" title="My Account">
+					<abbr class="user-account flex items-center jc-center b-solid r-50 b-persian c-persian" title="User">
+						<i class="fa-solid fa-user"></i>
+					</abbr>
+				</a>
+				<a href="" class="flex" title="Shopping Cart">
+					<abbr class="cart-link p-relative flex items-center jc-center b-solid r-50 b-persian c-persian" title="Cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+						<div class="cart-count flex items-center jc-center r-50">10</div>
+					</abbr>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section>
+			<div class="dashboard-wrapper flex">
+				<aside class="aside-fillter">
+					<div class="fillter-title">Filter</div>
+                    <button class="fillter-btn"><i class="fa-solid fa-bars"></i></button>
+					<ul id="aside-nav" class="g-5 flex flex-col">
+						<li class="x-btn">
+							<button><i class="fa-solid fa-circle-xmark"></i></button>
+						</li>
+						<li><a href=""><i class="fas fa-user"></i>Profile</a></li>
+						<li><a href=""><i class="fas fa-box"></i>Orders</a></li>
+						<li><a href=""><i class="fas fa-heart"></i>Wishlist</a></li>
+						<li><a href=""><i class="fas fa-star"></i>Reviews</a></li>
+						<li><a href=""><i class="fa-solid fa-tag"></i> coupons</a></li>
+					</ul>
+				</aside>
+				<div class="main-container">
+					<form>
+						<div class="review-section">
+							<div class="review-cont g-5 flex items-start jc-start flex-col">
+								<div class="g-20 flex items-center jc-center">
+									<img src="" class="">
+									<h3 class="">Anshu Gaur</h3>
+								</div>
+								<div class="date bold">17 March 2025</div>
+								<div class="stars">5.0 ★</div>
+								<p class="">
+									Good product and quality is good and value for money but it is meant for bed side table only because it is a small digital clock
+								</p>
+								<ul class="cust-img g-20 flex items-center jc-start flex-wrap">
+									<li>
+										<img src="" class="w-full-h-full obj-contain b-solid b-persian r-20 csr-pointer">
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div id="r-full-size" class="g-50 items-center jc-center flex-col" style="display:none;">
+				<img src="" class="r-20">
+				<button type="button"><i class="fa-solid fa-circle-xmark"></i></button>
+			</div>
+		</section>
+
+		<section>
+            <form method="post">
+                <div id="rating-section">
+                    <div class="rating-cont g-20 flex flex-col">
+                        <div class="g-20 flex items-center jc-between">
+                            <h3 class="tt-cap bold">product review & rating</h3>
+                            <button type="button" class="btn" onclick="closeRating()"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <hr class="w-100">
+                        <div class="tt-cap bold">product rating</div>
+                        <div class="rating-section g-5 flex items-start jc-between">
+                            
+                            <label class="rating-container g-5 flex items-center jc-center flex-col cursor-p">
+                                <i class="fa-solid fa-face-angry" style="color:red;"></i>
+                                <span>very poor</span>
+                                <input type="radio" name="rating-action" value="Very Poor" class="fix-none">
+                            </label>
+
+                            <label class="rating-container g-5 flex items-center jc-center flex-col cursor-p">
+                                <i class="fa-solid fa-face-frown" style="color:#ff9f00;"></i>
+                                <span>Average</span>
+                                <input type="radio" name="rating-action" value="Average" class="fix-none">
+                            </label>
+
+                            <label class="rating-container g-5 flex items-center jc-center flex-col cursor-p">
+                                <i class="fa-solid fa-face-smile" style="color:orange;"></i>
+                                <span>good</span>
+                                <input type="radio" name="rating-action" value="Good" class="fix-none">
+                            </label>
+
+                            <label class="rating-container g-5 flex items-center jc-center flex-col cursor-p">
+                                <i class="fa-solid fa-face-grin" style="color:lightgreen;"></i>
+                                <span>very good</span>
+                                <input type="radio" name="rating-action" value="Very Good" class="fix-none">
+                            </label>
+
+                            <label class="rating-container g-5 flex items-center jc-center flex-col cursor-p">
+                                <i class="fa-solid fa-face-grin-beam" style="color:green;"></i>
+                                <span>excllent</span>
+                                <input type="radio" name="rating-action" value="Excllent" class="fix-none">
+                            </label>
+                        </div>
+
+                        <div class="w-100">
+                            <input type="text" name="rating-name" placeholder="select rating" id="rating-name" class="inp w-100" readonly>
+                        </div>
+
+                        <div class="form-g w-100 g-5 flex flex-col">
+                            <label>product review</label>
+                            <textarea type="text" name="rating-review" placeholder="enter your review" class="txta w-100"></textarea>
+                        </div>
+
+                        <button type="button" class="btn">
+                        	<label>Upload</label>
+                        	<input type="file" name="file" accept="image/*,video/*" multiple class="fix-none">
+                        </button>
+
+                        <div class="c-img-video">
+                        	<video>
+                        		<source src="" type="">
+                        	</video>
+                        	<img src="">
+                        </div>
+
+                        <button type="submit" id="cart-rating-btn" name="cart-rating-btn" class="btn" disabled>Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+	</main>
+</body>
+</html>

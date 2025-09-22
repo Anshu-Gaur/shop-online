@@ -1,0 +1,85 @@
+.p-cds{
+	width: 19%;
+	margin-bottom:10px;
+	border-radius: 10px;
+}
+
+.p-cds-dPct{
+	border-radius: 20px 0 0 20px;
+	background-color:green;
+	position: absolute;
+	padding: 8px;
+	color: white;
+	top: 20px;
+	right:0;
+}
+
+.p-cds-imgs{
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.cds-dlvy{
+	border: 1px solid #aaa;
+	padding:4px;
+	font-size: 14px;
+	width: 120px;
+	color: #aaa;
+}
+
+.cds-Coupon{
+	color: white;
+	padding:3px 6px;
+	border-radius: 2px;
+	background-color: green;
+}
+
+.cds-rating{
+	display: inline-block;
+	border-color: #ff9f00;
+	padding:2px 8px;
+	color: #ff9f00;
+	font-size: 14px;
+}
+
+.cds-reviews{
+	font-size: 14px;
+	color: #aaa;
+}
+
+
+@media screen and (max-width: 1400px){
+	.p-cds{
+		width: 24%;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.p-cds{
+		width: 32.33%;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.p-cds{
+		width: 49%;
+	}
+
+
+}
+
+@media screen and (max-width: 768px){
+}
+
+/* Mobile styles */
+@media screen and (max-width: 576px){
+	.p-cds-imgs{
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+}

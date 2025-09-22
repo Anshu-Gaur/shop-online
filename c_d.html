@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<div class="header flex items-center jc-between">
+			<a href="" class="logo">
+				<img src="./assets/images/Qlcia.png" alt="Website Logo" class="logo-img">
+			</a>
+			<form class="search-bar p-relative">
+				<div class="search-box flex items-center jc-between b-solid r-50 b-persian">
+					<input type="search" name="query" id="search-input" placeholder="Search products...">
+					<label for="search-input" class="search-icon bg-persian cursor-p"><i class="fa-solid fa-magnifying-glass"></i></label>
+				</div>
+				<ul class="search-suggestions" style="display: none;">
+					<li>mens <i class="fa-solid fa-arrow-up"></i></li>
+				</ul>
+			</form>
+			<div class="user-cart g-50 flex items-center jc-center">
+				<a href="" class="flex" title="My Account">
+					<abbr class="user-account flex items-center jc-center b-solid r-50 b-persian c-persian" title="User">
+						<i class="fa-solid fa-user"></i>
+					</abbr>
+				</a>
+				<a href="" class="flex" title="Shopping Cart">
+					<abbr class="cart-link p-relative flex items-center jc-center b-solid r-50 b-persian c-persian" title="Cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+						<div class="cart-count flex items-center jc-center r-50">10</div>
+					</abbr>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section>
+			<form>
+				<div class="crt-cont g-50 flex items-start jc-center">
+					<div class="g-20 flex flex-col">
+						<h2 class="tt-cap">Delivery Address</h2>
+						<div class="g-50 flex items-center jc-between">
+							<div class="bold">Select Delivery Address</div>
+							<button class="crt-btn tt-cap bold cursor-p">ADD NEW ADDRESS</button>
+						</div>
+						<div class="pdt-crt g-5 flex b-solid b-persian  r-20">
+                            <div class="w-100 g-5 flex flex-col">
+                                <div class="tt-cap bold" id="odr_name">anshu gaur</div>
+                                <div class="tt-cap">
+                                    <span id="odr_bld_no_name">h-280</span>&comma;
+                                    <span id="odr_area">ambedkar park</span>&comma;
+                                    <span id="odr_city">kondli</span>&comma;
+                                    <span id="odr_state">delhi</span>&comma;
+                                    <span id="odr_pin_code">110093</span>
+                                </div>
+                                <div class="tt-Cap" id="odr_nearby_places">near by sochalye</div>
+                                <div class="f-bold" id="odr_phone">8882734711</div>
+                            </div>
+                            <div class="g-20 flex flex-col">
+                                <input type="radio" name="delivery-action" value="new" class="delivery-radio">
+                                <button type="button" class="crt-btn tt-cap bolds cursor-p">edit</button>
+                            </div>
+                        </div>
+					</div>
+					<div class="crt-rs g-20 flex flex-col" style="border-left: 1px solid #aaa;">
+                        <h2 class="tt-cap">Total Prices</h2>
+                        <div class="g-20 flex flex-col">
+                            <div class="g-50 flex items-start jc-between">
+                                <div class="tt-cap">Total Product Price</div>
+                                <div>&#x20B9;&nbsp;</div>
+                            </div>
+                            <div class="g-50 flex items-start jc-between">
+                                <div class="tt-cap">Total Discounts</div>
+                                <div>&#x20B9;&nbsp;</div>
+                            </div>
+                            <hr class="w-100">
+                            <div class="g-50 flex items-start jc-between">
+                                <div class="tt-cap bold">Total price</div>
+                                <div>&#x20B9;&nbsp;</div>
+                            </div>
+                            <button type="button" class="btn r-50 bg-persian c-white" name="Continue-delivery" id="continue-delivery-btn" >Continue</button>
+                        </div>
+                    </div>
+				</div>
+			</form>
+		</section>
+
+		<section>
+			<form>
+				<div class="crt-edit-cont">
+					<div class="crt-edit-p form g-20 flex items-center jc-start flex-col">
+						<div class="g-50 flex items-start jc-between">
+							<h3 class="title">product edit</h3>
+							<button type="button" class="btn"><i class="fa-solid fa-xmark"></i></button>
+						</div>
+						<hr class="w-100">
+                        <div class="form-g w-100 g-5 flex flex-col">
+                        	<label>enter your name</label>
+                        	<input type="text" name="c-full-name" class="inp w-100" placeholder="full name">
+                        </div>
+                        <div class="form-g w-100 g-5 flex flex-col">
+                        	<label>enter Contact number</label>
+                        	<input type="number" name="c-phone_no" class="inp w-100" placeholder="phone number">
+                        </div>
+                        <div class="form-g w-100 g-5 flex flex-col">
+                        	<label>enter house no./ building name</label>
+                        	<input type="text" name="c-build-no-name" class="inp w-100" placeholder="house / building">
+                        </div>
+                        <div class="form-g w-100 g-5 flex flex-col">
+                        	<label>enter road name / area / colony</label>
+                        	<input type="text" name="c-area" class="inp w-100" placeholder="road / area / colony">
+                        </div>
+                        <div class="form-g w-100 g-5 flex flex-col">
+                        	<label>enter city</label>
+                        	<input type="text" name="c-city" class="inp w-100" placeholder="city">
+                        </div>
+                        <div class="form-g w-100 g-5 flex flex-col">
+                        	<label>enter state</label>
+                        	<input type="text" name="c-state" class="inp w-100" placeholder="state">
+                        </div>
+                        <div class="form-g w-100 g-5 flex flex-col">
+                        	<label>enter post code</label>
+                        	<input type="number" name="c-pin-code" class="inp w-100" placeholder="pin code">
+                        </div>
+                        <div class="form-g w-100 g-5 flex flex-col">
+                        	<label>enter near by places</label>
+                        	<input type="text" name="c-nearby-places" class="inp w-100" placeholder="near places">
+                        </div>
+                        <button type="submit" id="cart-edit-btn" class="btn w-100 r-50 bg-persian c-white">
+                        	Submit
+                        </button>
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+</body>
+</html>

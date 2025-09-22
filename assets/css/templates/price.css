@@ -1,0 +1,19 @@
+.p-cds-Dtls{
+	gap: 10px;
+	padding: 10px;
+}
+
+.cds-dis,.crt-dis{
+	font-size: 24px;
+}
+
+.cds-sale,.crt-sale{
+	text-decoration: line-through;
+	font-size: 14px;
+	color: #aaa;
+}
+
+.crt-dis-Per{
+	color: green;
+	font-size: 18px;
+}

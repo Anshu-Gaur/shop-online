@@ -1,0 +1,15 @@
+.coup-cont{
+	border: 5px solid #ccc;
+	padding: 15px;
+	width: 19%;
+	gap: 10px;
+}
+
+.cup-amount{
+	font-size: 32px;
+}
+
+.coup-code{
+	background-color: #eee;
+	padding: 8px 12px;
+}

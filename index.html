@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header>
+		<div class="header flex items-center jc-between flex-wrap">
+			<a href="" class="logo">
+				<img src="./assets/images/Qlcia.png" alt="Website Logo" class="logo-img">
+			</a>
+			<form class="search-bar">
+				<div class="search-box flex items-center jc-between b-solid r-50 b-persian">
+					<input type="search" name="query" id="search-input" placeholder="Search products...">
+					<label for="search-input" class="search-icon bg-persian cursor-p"><i class="fa-solid fa-magnifying-glass"></i></label>
+				</div>
+				<ul class="search-suggestions" style="display: none;">
+					<li>mens <i class="fa-solid fa-arrow-up"></i></li>
+				</ul>
+			</form>
+			<div class="user-cart g-20 flex items-center jc-center">
+				<a href="" class="flex" title="My Account">
+					<abbr class="user-account flex items-center jc-center b-solid r-50 b-persian c-persian" title="User">
+						<i class="fa-solid fa-user"></i>
+					</abbr>
+				</a>
+				<a href="" class="flex" title="Shopping Cart">
+					<abbr class="cart-link p-relative flex items-center jc-center b-solid r-50 b-persian c-persian" title="Cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+						<div class="cart-count flex items-center jc-center r-50">10</div>
+					</abbr>
+				</a>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div id="nav">
+			<ul id="navbar-menu" class="main-categories g-20 flex items-start jc-start">
+				<li>
+		            <a href="">
+		            	men
+		                <img src="" alt="">
+		            </a>
+		            <ul class="head-category">
+		            	<li>
+                            <a class="head-category-link"></a>
+                            <ul class="sub-category">
+                            	<li>
+                                    <a href="" class="sub-menu-link">
+                                       
+                                    </a>
+                                </li>
+                            </ul>
+		            </ul>
+		        </li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<section>
+			<div class="dashboard-wrapper flex flex-wrap">
+				<aside class="aside-fillter flex jc-between">
+					<div class="fillter-title title c-white">Filter</div>
+                    <button class="fillter-btn cursor-p no-syl-btn c-white"><i class="fa-solid fa-bars"></i></button>
+					<ul id="fillter-nav" class="g-5 flex flex-col">
+						<li class="x-btn">
+							<button><i class="fa-solid fa-circle-xmark"></i></button>
+						</li>
+						<li>
+							<div class="fillter-dropdown g-50 flex items-center jc-between">
+                                <span class="tt-cap bold">gender</span>
+                                <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+                            <ul id="fltr-brd" class="fillter-subdropdown">
+                            	<li>men's</li>
+                            	<li>women's</li>
+                            	<li>boy's</li>
+                            	<li>girl's</li>
+                            	<li>kind's</li>
+                            </ul>
+						</li>
+						<li>
+							<div class="fillter-dropdown g-50 flex items-center jc-between">
+                                <span class="tt-cap bold">Brand</span>
+                                <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+                            <ul id="fltr-brd" class="fillter-subdropdown">
+                            	<li>baut</li>
+                            	<li>baut</li>
+                            	<li>baut</li>
+                            </ul>
+						</li>
+						<li>
+							<div class="fillter-dropdown g-50 flex items-center jc-between">
+                                <span class="tt-cap bold">colours</span>
+                                <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+                            <ul id="fltr-clr" class="fillter-subdropdown g-5 flex flex-wrap">
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            	<li style="background-color:red;"></li>
+                            </ul>
+						</li>
+						<li>
+                            <div class="fillter-dropdown g-50 flex items-center jc-between">
+                                <span class="tt-cap bold">price</span>
+                                <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+                            <ul id="fltr-range" class="fillter-subdropdown g-5 flex flex-wrap">
+                                <li class="cursor-p">
+                                    <div class="flex jc-between">
+                                        <span id="low-price">200</span>
+                                        <span>-</span>
+                                        <span id="height-price">5000</span>
+                                    </div>
+                                    <input type="range" id="fillter-range-price" min="" max="" value="" step="1">
+                                </li>
+                            </ul>
+                        </li>
+						<li>
+							<div class="fillter-dropdown g-50 flex items-center jc-between">
+                                <span class="tt-cap bold">sizes</span>
+                                <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+                            <ul id="fltr-size" class="fillter-subdropdown g-5 flex flex-wrap">
+                            	<li>s</li>
+                            	<li>m</li>
+                            	<li>l</li>
+                            	<li>xl</li>
+                            </ul>
+						</li>
+						<li>
+							<div class="fillter-dropdown g-50 flex items-center jc-between">
+                                <span class="tt-cap bold">Brand</span>
+                                <span class="dropdown-icon"><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+                            <ul id="fltr-dis" class="fillter-subdropdown g-5 flex flex-col">
+                            	<li>10% And Above</li>
+                            	<li>20% And Above</li>
+                            	<li>30% And Above</li>
+                            	<li>40% And Above</li>
+                            	<li>50% And Above</li>
+                            	<li>60% And Above</li>
+                            	<li>70% And Above</li>
+                            	<li>80% And Above</li>
+                            	<li>90% And Above</li>
+                            </ul>
+						</li>
+					</ul>
+				</aside>
+				<div class="main-container flex-wrap">
+					<div class="p-cds b-solid b-persian">
+						<div style="display: none;">
+							<div id="cds-m-cats"></div>
+							<div id="cds-s-cats"></div>
+							<div id="cds-p-id"></div>
+							<div id="cds-gender"></div>
+							<div id="cds-brand"></div>
+							<div id="cds-clr"></div>
+							<div id="cds-size"></div>
+						</div>
+						<div class="p-relative">
+							<div class="p-cds-dPct">90% Off</div>
+							<img src="" class="p-cds-imgs">
+						</div>
+						<div class="p-cds-Dtls flex flex-col">
+							<h3 class="cds-t">911 Membrane Cleaner As...</h3>
+							<div class="g-50 flex items-end jc-start">
+								<div class="cds-dis">&#x20B9;&nbsp;700</div>
+								<div class="cds-sale">&#x20B9;&nbsp;700</div>
+							</div>
+							<div class="cds-dlvy flex items-center jc-center r-50">
+                               	<i class="fa-solid fa-truck"></i>&nbsp;
+                                <span>Free Delivery</span>
+                            </div>
+                            <div class="flex items-end jc-start">
+                            	<div class="cds-Coupon">
+                            		<span class="tt-cap">save</span>
+                            		<span>700&nbsp;Rs</span>
+                            	</div>&nbsp;&nbsp;
+                            	<div>This is coupon...</div>
+							</div>
+							<div class="cds-rr flex items-end jc-between">
+								<div class="cds-rating b-solid r-50">5&nbsp;&starf;</div>
+								<div class="cds-reviews tt-cap">500&nbsp;reviews</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
